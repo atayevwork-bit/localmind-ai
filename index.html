@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LocalMind AI: offline AI study companion</title>
+<meta name="description" content="LocalMind AI is a private AI chat assistant for students that runs on the phone after a one-time model download.">
+<link rel="icon" href="icon.png">
+<style>
+:root{--ink:#0f1020;--indigo:#4f46e5;--indigo-d:#3730a3;--indigo-l:#a5b4fc;--coral:#fb7185;--bg:#f5f5ff;--card:#fff;--muted:#5b5d78}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:var(--indigo)}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.hero{background:linear-gradient(135deg,#1e1b4b 0%,#3730a3 55%,#4f46e5 100%);color:#fff;padding:56px 0 64px}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.brand img{width:56px;height:56px;border-radius:14px}
+.brand b{font-size:1.35rem;letter-spacing:-.3px}.brand b span{color:var(--coral)}
+h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.15;margin:0 0 14px;letter-spacing:-.5px}
+.lead{font-size:1.15rem;color:#e0e2ff;max-width:640px;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn.p{background:var(--coral);color:#fff}.btn.s{border:1.5px solid #c7cbff;color:#fff}
+.hero-img{margin-top:36px;width:100%;border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+section{padding:52px 0}
+h2{font-size:1.7rem;margin:0 0 8px;letter-spacing:-.3px}
+.sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border-radius:16px;padding:22px;box-shadow:0 2px 10px rgba(79,70,229,.08);border:1px solid #e4e6ff}
+.card h3{margin:0 0 6px;font-size:1.05rem;color:var(--indigo-d)}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.steps{counter-reset:s;display:grid;gap:14px}
+.step{display:flex;gap:16px;align-items:flex-start;background:var(--card);padding:18px 20px;border-radius:14px;border:1px solid #e4e6ff}
+.step:before{counter-increment:s;content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--indigo);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.step b{display:block}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.shot{aspect-ratio:9/19;border-radius:22px;background:#e9eaff;border:2px dashed var(--indigo-l);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem;text-align:center;padding:10px;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+.shot.ok{border:0;background:none;padding:0;box-shadow:0 10px 30px rgba(30,27,75,.18)}
+.demo{display:flex;justify-content:center}
+.demo video{max-width:100%;width:340px;max-height:80vh;border-radius:24px;box-shadow:0 14px 40px rgba(30,27,75,.25);background:#0b0a24}
+.note{background:#fff;border-left:4px solid var(--coral);padding:16px 20px;border-radius:10px;color:var(--muted)}
+footer{padding:34px 0;color:var(--muted);font-size:.92rem;border-top:1px solid #e4e6ff}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <div class="brand"><img src="icon.png" alt="LocalMind AI icon"><b>LocalMind <span>AI</span></b></div>
+  <h1>Your offline study companion.</h1>
+  <p class="lead">A private AI chat assistant for students. After a one-time setup it runs on your phone, with no account and no internet connection needed.</p>
+  <div class="btns">
+    <a class="btn p" href="#download">Download demo (Android)</a>
+    <a class="btn s" href="#features">See features</a>
+  </div>
+  <img class="hero-img" src="hero.png" alt="LocalMind AI: Your offline study companion">
+</div></header>
+
+<section id="features"><div class="wrap">
+  <h2>What it does</h2>
+  <p class="sub">Built for explaining, summarizing and practicing, wherever you study.</p>
+  <div class="grid">
+    <div class="card"><h3>Works offline</h3><p>The AI model runs locally on your device. Your questions are not sent to a server.</p></div>
+    <div class="card"><h3>Private by design</h3><p>No sign-up, no account, no tracking. Chats stay on your phone.</p></div>
+    <div class="card"><h3>Chat history</h3><p>Open the side menu to continue earlier chats, start a new one or delete old ones.</p></div>
+    <div class="card"><h3>Copy and edit</h3><p>Press and hold a message to copy it, or edit your own message and ask again.</p></div>
+    <div class="card"><h3>Voice input</h3><p>If speech recognition is available on the device, dictate your question with the microphone button.</p></div>
+    <div class="card"><h3>Light and dark mode</h3><p>Clean indigo design with smooth animations, a thinking indicator and word-by-word answers.</p></div>
+    <div class="card"><h3>Your language</h3><p>The interface follows the phone language (English, Turkish, Turkmen) and the assistant answers in the language you write.</p></div>
+    <div class="card"><h3>Resumable setup</h3><p>The model download can resume after an interruption and checks free storage first.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>How it works</h2>
+  <p class="sub">Three steps, then you are offline.</p>
+  <div class="steps">
+    <div class="step"><div><b>Install the app</b>Open LocalMind AI on your Android phone.</div></div>
+    <div class="step"><div><b>One-time model download</b>On first launch the app downloads its language model (about 2.6 GB). Wi-Fi and 3 GB of free space recommended.</div></div>
+    <div class="step"><div><b>Chat anywhere</b>Once downloaded, ask questions with no internet connection.</div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>See it in action</h2>
+  <p class="sub">A short demo recorded on a real Android phone.</p>
+  <div class="demo"><video controls preload="metadata" playsinline poster="screenshots/demo_poster.jpg"><source src="screenshots/demo.mp4" type="video/mp4"></video></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Screenshots</h2>
+  <p class="sub">Dark and light themes, chat and history menu.</p>
+  <div class="shots">
+    <div class="shot ok"><img src="screenshots/1.jpg" alt="Dark mode chat screen" loading="lazy"></div>
+    <div class="shot ok"><img src="screenshots/4.jpg" alt="Dark mode history menu" loading="lazy"></div>
+    <div class="shot ok"><img src="screenshots/2.jpg" alt="Light mode chat screen" loading="lazy"></div>
+    <div class="shot ok"><img src="screenshots/3.jpg" alt="Light mode history menu" loading="lazy"></div>
+  </div>
+</div></section>
+
+<section id="download"><div class="wrap">
+  <h2>Download the demo</h2>
+  <p class="sub">Android only. Allow installation from this source when asked.</p>
+  <p><a class="btn p" href="REPLACE_WITH_APK_LINK">Download LocalMind-AI-demo.apk</a></p>
+  <div class="note">AI answers can be wrong. Double-check important information, and do not rely on the app for medical, legal or financial decisions.</div>
+</div></section>
+
+<footer><div class="wrap">
+  Contact: <a href="mailto:atayevwork@gmail.com">atayevwork@gmail.com</a> &middot;
+  <a href="privacy.html">Privacy policy</a><br>
+  Developed by Atayev Dayanch.
+</div></footer>
+</body>
+</html>
